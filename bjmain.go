@@ -43,8 +43,11 @@ func gameLoop(deck Deck) {
 	add(&playerHand, draw(&deck))
 	add(&dealerHand, draw(&deck))
 	add(&dealerHand, draw(&deck))
-   
-   // player draw loop
+	
+	// blank line for readability
+	fmt.Println("")
+	
+	// player draw loop
 	keepLooping := true
 	for ; keepLooping; {
 		hitOrStand(playerHand, dealerHand)
